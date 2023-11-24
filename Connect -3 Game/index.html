@@ -1,0 +1,112 @@
+<!DOCTYPE html5>
+<html5 lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GLA3_Connect-3_Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="default">
+
+    <div class="test">Hehe You Found Me :3</div>
+
+    <nav>
+        <section class="optionsBar">
+                <div id="restart" class="customButton">Restart Game</div>
+                <div id="starter" class="customButton">Pick Blue's Icon: </div>
+                <div id="starterIcon" class="customButton">X</div>
+                <div id="testButton" class="hide">Test</div>
+                <div id="toggle" class="customButton">Toggle Theme</div>
+            </section>
+    </nav>
+
+    <header>
+        <h1>Connect-3 Game</h1>
+    </header>
+
+    <div id="play" class="play"><h1>Play</h1></div>
+
+    <!--Game Board-->
+    <div class="container">
+        <main id="board" class="board">
+            <section id="rowOne" class="row">
+                <section id="colOne" class="column">
+                    <div id="0" class="gameCell" onclick="main(0)"></div>
+                </section>
+                <section id="colTwo" class="column">
+                    <div id="10" class="gameCell" onclick="main(0)"></div>
+                </section>
+                <section id="colThree" class="column">
+                    <div id="20" class="gameCell" onclick="main(0)"></div>
+                </section>
+            </section>
+            <section id="rowTwo" class="row">
+                <section id="colOne" class="column">
+                    <div id="1" class="gameCell" onclick="main(1)"></div>
+                </section>
+                <section id="colTwo" class="column">
+                    <div id="11" class="gameCell" onclick="main(1)"></div>
+                </section>
+                <section id="colThree" class="column">
+                    <div id="21" class="gameCell" onclick="main(1)"></div>
+                </section>
+            </section>
+            <section id="rowThree" class="row">
+                <section id="colOne" class="column">
+                    <div id="2" class="gameCell" onclick="main(2)"></div>
+                </section>
+                <section id="colTwo" class="column">
+                    <div id="12" class="gameCell" onclick="main(2)"></div>
+                </section>
+                <section id="colThree" class="column">
+                    <div id="22" class="gameCell" onclick="main(2)"></div>
+                </section>
+            </section>
+            <section id="rowFour" class="row">
+                <section id="colOne" class="column">
+                    <div id="30" class="gameCell" onclick="main(0)"></div>
+                </section>
+                <section id="colTwo" class="column">
+                    <div id="40" class="gameCell" onclick="main(0)"></div>
+                </section>
+                <section id="colThree" class="column">
+                    <div id="50" class="gameCell" onclick="main(0)"></div>
+                </section>
+            </section>
+            <section id="rowFive" class="row">
+                <section id="colOne" class="column">
+                    <div id="31" class="gameCell" onclick="main(1)"></div>
+                </section>
+                <section id="colTwo" class="column">
+                    <div id="41" class="gameCell" onclick="main(1)"></div>
+                </section>
+                <section id="colThree" class="column">
+                    <div id="51" class="gameCell" onclick="main(1)"></div>
+                </section>
+            </section>
+            <section id="rowSix" class="row">
+                <section id="colOne" class="column">
+                    <div id="32" class="gameCell" onclick="main(2)"></div>
+                </section>
+                <section id="colTwo" class="column">
+                    <div id="42" class="gameCell" onclick="main(2)"></div>
+                </section>
+                <section id="colThree" class="column">
+                    <div id="52" class="gameCell" onclick="main(2)"></div>
+                </section>
+            </section>
+        </main>
+
+    </div>
+        <section>
+            <h1 id="gameResult" class="neutral">The game is ongoing</h1>
+            <h1 id="playerDisplay" class="resultBlue">Blue</h1>
+        </section>
+
+
+        <div id="secret" class="secret" ondblclick="secret()">SHHHH!</div>
+
+    <script src="index.js"></script>
+</body>
+</html5>

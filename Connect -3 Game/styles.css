@@ -1,0 +1,257 @@
+/*General CSS*/
+body {
+    max-width: 100vw;
+    max-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Garamond, Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-size: xx-large;
+    text-align: center;
+    text-decoration: solid;
+}
+a {
+    text-decoration: none;
+    color: var(--background);
+    background-color: var(--colour);
+    float: left;
+}
+.test {
+    display: none;
+    background-color: var(--p2Secondary);
+    color: var(--p1);
+}
+.test1 {
+    display: block;
+    background-color: var(--p2Secondary);
+    color: var(--p1);
+}
+.hide {
+    display: none;
+}
+
+.play {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 30vw;
+    padding: 4vw;
+    margin: auto;
+    margin-top: 5vh;
+    background-color: var(--colour);
+    color: var(--background);
+    transition: background 0.2s ease-in-out;
+}
+.play:hover {
+    background-color: var(--secondary);
+    color: var(--colour);
+}
+
+/*Themes for Page*/
+.default {
+    --background: darkred;
+    --colour: aliceblue;
+    --secondary: rgb(83, 6, 13);
+    --p1: rgb(12, 12, 90);
+    --p2: rgb(29, 80, 13);
+    --p1Secondary: rgb(162, 162, 212);
+    --p2Secondary: rgb(151, 212, 156);
+    background-color: var(--background);
+    color: var(--colour);
+    transition: background 0.2s ease-in-out;
+}
+.light {
+    --background: aliceblue;
+    --colour: darkred;
+    --secondary: rgb(231, 180, 180);
+    --p1: rgb(162, 162, 212);
+    --p2: rgb(151, 212, 156);
+    --p1Secondary: rgb(12, 12, 90);
+    --p2Secondary: rgb(29, 80, 13);
+    background-color: var(--background);
+    color: var(--colour);
+    transition: background 0.2s ease-in-out;
+}
+
+/*Options Bar*/
+.optionsBar {
+    overflow: hidden;
+    font-size: larger;
+    background-color: var(--colour);
+    color: var(--background);
+    max-width: 100%;
+}
+.optionsBar div {
+    float: left;
+    text-align: center;
+    border-right: 1px black;
+}
+.customButton:hover {
+    cursor: pointer;
+    background-color: var(--secondary);
+    color: var(--colour);
+    border-right: 1vw var(--colour);
+}
+.customButton:nth-last-of-type(3):hover{
+    cursor: auto;
+    background-color: var(--colour);
+    color: var(--background);
+}
+.optionsBar div:last-of-type {
+    float: right;
+    border-right: none;
+}
+.customButton {
+    display: block;
+    margin: 0;
+    padding: 1vw 1vh;
+    background-color: var(--colour);
+    color: var(--background);
+    user-select: none;
+}
+
+/*Game Board*/
+.board {
+    display: grid;
+    width: 21vw;
+    height: 42vh;
+    grid-template-columns: auto auto auto;
+    background-color: (var(--background));
+    color: (var(--colour));
+}
+.container {
+    max-height: 70vh;
+    margin-top: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.gameCell {
+    display: flex;
+    width: 7vw;
+    height: 14vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    transition: background 0.2s ease-in-out;
+    background-color: var(--background);
+    color: var(--colour);
+    border: 2px solid var(--secondary);
+    user-select: none;
+}
+.gameCell:hover {
+    cursor: pointer;
+    background: var(--colour);
+    color: var(--background);
+}
+
+/*Results and Turns*/
+#playerDisplay {
+    display: none;
+    align-items: center;
+    margin: 1vw;
+    padding: auto;
+    min-width: fit-content;
+    min-height: fit-content;
+    max-width: 30vw;
+    
+}
+#gameResult {
+    display: none;
+    align-items: center;
+    margin: 1vw;
+    padding: auto;
+    min-width: fit-content;
+    min-height: fit-content;
+    max-width: 30vw;
+}
+.resultBlue {
+    transition: background 0.2s ease-in-out;
+    background-color: var(--p1);
+    color: var(--colour);
+}
+.resultGreen {
+    transition: background 0.2s ease-in-out;
+    background-color: var(--p2);
+    color: var(--colour);
+}
+.resultTie {
+    background-color: var(--secondary);
+    color: var(--colour);
+}
+.neutral {
+    transition: background 0.2s ease-in-out;
+    color: var(--colour);
+    user-select: none;
+}
+.blue {
+    transition: background 0.2s ease-in-out;
+    background-color: var(--p1);
+    color: var(--colour);
+    user-select: none;
+}
+.blue:hover {
+    background-color: var(--p1Secondary);
+}
+.green {
+    transition: background 0.2s ease-in-out;
+    background-color: var(--p2);
+    color: var(--colour);
+    user-select: none;
+}
+.green:hover {
+    background-color: var(--p2Secondary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.secret {
+    display: none;
+    float: right;
+    padding: 1vw 1vh;
+    background-color: var(--background);
+    color: var(--background);
+    transition: 0.2s ease-in-out;
+    user-select: none;
+}
+.secret:hover {
+    color: var(--secondary);
+    cursor: pointer;
+}
