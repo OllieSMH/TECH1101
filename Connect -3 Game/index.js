@@ -62,8 +62,6 @@ function resetGame() {
     winner.classList.remove('resultGreen');
     winner.classList.add('neutral');
 
-    document.getElementById('playerDisplay').style.display = "block";
-
     board = [
       ['', '', ''],
       ['', '', ''],
